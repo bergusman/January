@@ -15,7 +15,7 @@ after_script:
 env:
   global:
   - APP_NAME="January"
-  - 'DEVELOPER_NAME="iPhone Distribution: Vitaliy Berg"'
+  - 'DEVELOPER_NAME="iPhone Distribution: Vitaliy Berg (5G5YZAQBSX)"'
   - PROFILE_NAME="JanuaryAdHoc"
   - secure: T1IyOu5s1VONaifTHmGDvKcCxmPg3ITk0NmUXUALpKVKgYZSmdwkGxX/W/wsepLUyz+MbyuPUbQJXNQEPUfsx6CYP4yfl37/upMT878dYxYPTFwprTelf9a9DSvNdT85Oj8efOkAU8Mwd2mo0vGUgv3EhBLztN/IJKbSMpBFxSU=
   - secure: uN1Cena9CLlGDP3s9NqqYGx5MH3+YfsK1LimhleQHDnitBXI+QgE3kTEYc1Cyq+WtYiDuiUgS19w5apM5oL75VjZunADRhfBpho8RevLRtiT/oh689YNemdLih5sk50NO0lAq+NUHwrsPwwRVTlkQgOaE9pONxfWRqpvwkL9HLc=  
