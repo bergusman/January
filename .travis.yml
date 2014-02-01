@@ -1,2 +1,5 @@
 language: objective-c
-before_install: gem install cocoapods
+before_install:
+    - gem install cocoapods
+script:
+    - xctool -workspace January.xcworkspace -scheme January -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
