@@ -9,6 +9,7 @@ before_script:
 - openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/certs/dist.cer.enc -d -a
   -out scripts/certs/dist.cer
 - ./scripts/add-key.sh
+- ./scripts/update-bundle.sh
 script:
 - xctool -workspace January.xcworkspace -scheme January -sdk iphoneos -configuration
   Release OBJROOT=$PWD/build SYMROOT=$PWD/build ONLY_ACTIVE_ARCH=NO
@@ -21,6 +22,7 @@ env:
   - APP_NAME="January"
   - 'DEVELOPER_NAME="iPhone Distribution: Vitaliy Berg (5G5YZAQBSX)"'
   - PROFILE_NAME="JanuaryAdHoc"
+  - INFO_PLIST="January/January-Info.plist"
   - secure: T1IyOu5s1VONaifTHmGDvKcCxmPg3ITk0NmUXUALpKVKgYZSmdwkGxX/W/wsepLUyz+MbyuPUbQJXNQEPUfsx6CYP4yfl37/upMT878dYxYPTFwprTelf9a9DSvNdT85Oj8efOkAU8Mwd2mo0vGUgv3EhBLztN/IJKbSMpBFxSU=
   - secure: uN1Cena9CLlGDP3s9NqqYGx5MH3+YfsK1LimhleQHDnitBXI+QgE3kTEYc1Cyq+WtYiDuiUgS19w5apM5oL75VjZunADRhfBpho8RevLRtiT/oh689YNemdLih5sk50NO0lAq+NUHwrsPwwRVTlkQgOaE9pONxfWRqpvwkL9HLc=
   - secure: AzqFRHK3V25aA6rgoXGHwRFylHb+JWP3t3285qJbnz1Gy0O9J+X/ho4hOtnPuesTQRrn+NRapdv8002PiNdaDzxyB69zY9WGaDsiGJNfGQeehs0zuCZV7gC26QW5lEWtTSrKdBMPMZJzNSPgsNUccS82oUZrxUPSET6MKCSNGcM=
