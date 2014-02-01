@@ -17,5 +17,11 @@ DerivedData
 *.hmap
 *.xccheckout
 
-#CocoaPods
+# CocoaPods
 Pods
+
+# Travis
+scripts/certs/dist.p12
+scripts/certs/dist.cer
+!scripts/profile
+scripts/profile/JanuaryAdHoc.mobileprovision

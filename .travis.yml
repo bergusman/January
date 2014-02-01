@@ -1,5 +1,16 @@
 language: objective-c
 before_install:
-    - gem install cocoapods
+- gem install cocoapods
+before_script:
+- openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/profile/JanuaryAdHoc.mobileprovision.enc -d -a -out scripts/profile/JanuaryAdHoc.mobileprovision
+- openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/certs/dist.p12.enc -d -a -out scripts/certs/dist.p12
+- openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/certs/dist.cer.enc -d -a -out scripts/certs/dist.cer
 script:
-    - xctool -workspace January.xcworkspace -scheme January -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+- xctool -workspace January.xcworkspace -scheme January -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+env:
+  global:
+  - APP_NAME="January"
+  - 'DEVELOPER_NAME="iPhone Distribution: Vitaliy Berg"'
+  - PROFILE_NAME="JanuaryAdHoc"
+  - secure: T1IyOu5s1VONaifTHmGDvKcCxmPg3ITk0NmUXUALpKVKgYZSmdwkGxX/W/wsepLUyz+MbyuPUbQJXNQEPUfsx6CYP4yfl37/upMT878dYxYPTFwprTelf9a9DSvNdT85Oj8efOkAU8Mwd2mo0vGUgv3EhBLztN/IJKbSMpBFxSU=
+  - secure: uN1Cena9CLlGDP3s9NqqYGx5MH3+YfsK1LimhleQHDnitBXI+QgE3kTEYc1Cyq+WtYiDuiUgS19w5apM5oL75VjZunADRhfBpho8RevLRtiT/oh689YNemdLih5sk50NO0lAq+NUHwrsPwwRVTlkQgOaE9pONxfWRqpvwkL9HLc=  
