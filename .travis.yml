@@ -2,3 +2,5 @@ language: objective-c
 install:
 - gem install cocoapods
 - pod setup
+before_install:
+- pod install
