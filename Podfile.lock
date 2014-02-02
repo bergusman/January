@@ -17,11 +17,14 @@ PODS:
   - AFNetworking/Serialization (2.1.0)
   - AFNetworking/UIKit (2.1.0):
     - AFNetworking/NSURLConnection
+  - NSData+MD5Digest (1.0.0)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.0)
+  - NSData+MD5Digest (~> 1.0.0)
 
 SPEC CHECKSUMS:
   AFNetworking: c7d7901a83f631414c7eda1737261f696101a5cd
+  NSData+MD5Digest: 8275479b2a935e6caa8a92a9a814fb5abecba367
 
 COCOAPODS: 0.29.0

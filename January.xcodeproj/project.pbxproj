@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AD67F511189E7A1E00CC5C21 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD67F510189E7A1E00CC5C21 /* Crashlytics.framework */; };
+		AD67F513189E84E800CC5C21 /* Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD67F512189E84E800CC5C21 /* Data.plist */; };
 		AD88DEDC189A789300F4A460 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD88DEDB189A789300F4A460 /* Foundation.framework */; };
 		AD88DEDE189A789300F4A460 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD88DEDD189A789300F4A460 /* CoreGraphics.framework */; };
 		AD88DEE0189A789300F4A460 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD88DEDF189A789300F4A460 /* UIKit.framework */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		33EC486C684344F3BB8DC92D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		AD67F510189E7A1E00CC5C21 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		AD67F512189E84E800CC5C21 /* Data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Data.plist; sourceTree = "<group>"; };
 		AD88DED8189A789300F4A460 /* January.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = January.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD88DEDB189A789300F4A460 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AD88DEDD189A789300F4A460 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -96,6 +98,7 @@
 				AD88DEF1189A789300F4A460 /* VBViewController.m */,
 				AD88DEF3189A789300F4A460 /* Images.xcassets */,
 				AD88DEE2189A789300F4A460 /* Supporting Files */,
+				AD67F512189E84E800CC5C21 /* Data.plist */,
 			);
 			path = January;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 			files = (
 				AD88DEF4189A789300F4A460 /* Images.xcassets in Resources */,
 				AD88DEE6189A789300F4A460 /* InfoPlist.strings in Resources */,
+				AD67F513189E84E800CC5C21 /* Data.plist in Resources */,
 				AD88DEEF189A789300F4A460 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
