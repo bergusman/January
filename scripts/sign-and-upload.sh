@@ -16,4 +16,5 @@ curl http://testflightapp.com/api/builds.json \
   -F api_token="$TESTFLIGHT_API_TOKEN" \
   -F team_token="$TESTFLIGHT_TEAM_TOKEN" \
   -F distribution_lists='Internal' \
-  -F notes="$RELEASE_NOTES"
+  -F notes="$RELEASE_NOTES" \
+  -F notify='true'
